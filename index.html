@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Network</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <!-- <img src="" alt=""> -->
+            <i class='bx bxl-unity logo'></i>
+            <ul>
+                <li><i class='bx bx-bell' ></i></li>
+                <li><i class='bx bxs-message-alt' ></i></li>
+                <li><i class='bx bx-movie-play' ></i></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+
+            <div class="search-box">
+                <!-- <img src="" alt=""> -->
+                <i class='bx bx-search' ></i>
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                <img src="https://pbs.twimg.com/profile_images/3691489229/e0b2f866e2e1449ad4303bc8a57c5168_400x400.jpeg" alt="">
+            </div>
+
+        </div>
+
+        <!-- Settings Menu -->
+        <div class="settings-menu">
+
+            <div id="dark-btn">
+                <span></span>
+            </div>
+
+            <div class="settings-menu-inner">
+                <div class="user-profile">
+                    <img src="https://pbs.twimg.com/profile_images/3691489229/e0b2f866e2e1449ad4303bc8a57c5168_400x400.jpeg" alt="">
+                    <div>
+                        <p>Ahmet Berkay</p>
+                        <a href="#">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <i class='bx bx-error-alt'></i>
+                    <div>
+                        <p>Give Feedback</p>
+                        <a href="#">Help us to improve our design</a>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="setting-links">
+                    <i class='bx bxs-cog settings-icon'></i>
+                    <a href="#">Settings & Privacy<i class='bx bx-right-arrow-alt' ></i></a>
+                </div>
+
+
+                <div class="setting-links">
+                    <i class='bx bxs-help-circle settings-icon' ></i>
+                    <a href="#">Help & Support<i class='bx bx-right-arrow-alt' ></i></a>
+                </div>
+
+
+                <div class="setting-links">
+                    <i class='bx bx-accessibility settings-icon' ></i>
+                    <a href="#">Display & Accessibility<i class='bx bx-right-arrow-alt' ></i></a>
+                </div>
+
+                <div class="setting-links">
+                    <i class='bx bxs-exit settings-icon' ></i>
+                    <a href="#">Logout<i class='bx bx-right-arrow-alt' ></i></a>
+                </div>
+
+            </div>
+        </div>
+        <!-- End of Settings Menu -->
+
+    </nav>
+
+    <div class="container">
+        <!-- Left Sidebar -->
+        <div class="left-sidebar">
+            <div class="imp-links">
+                <a href="#"><i class='bx bx-news'></i>Latest News</a>
+                <a href="#"><i class='bx bx-user'></i>Friends</a>
+                <a href="#"><i class='bx bx-group'></i>Group</a>
+                <a href="#"><i class='bx bx-store-alt'></i>Marketplace</a>
+                <a href="#"><i class='bx bx-movie-play'></i>Marketplace</a>
+                <a href="#">See More</a>
+            </div>
+            <div class="shortcut-links">
+                <p>Your Shortcuts</p>
+                <a href="#"><i class='bx bxl-docker'></i> Web Developers</a>
+                <a href="#"><i class='bx bxl-aws' ></i> Web Design Course</a>
+                <a href="#"><i class='bx bxl-sketch'></i> Full Stack Development</a>
+                <a href="#"><i class='bx bxl-steam' ></i> Website Experts</a>
+            </div>
+        </div>
+        
+        <!-- Main Content -->
+        <div class="main-content">
+
+            <div class="story-gallery">
+
+                <div class="story story1">
+                    <!-- <img src="https://randomuser.me/api/portraits/thumb/women/75.jpg" alt=""> -->
+                    <i class='bx bxs-alarm-add' ></i>
+                    <p>Post Story</p>
+                </div>
+
+                <div class="story story2">
+                    <img src="https://randomuser.me/api/portraits/thumb/women/76.jpg" alt="">
+                    <!-- <i class='bx bxs-message-square-add'></i> -->
+                    <p>Post Story</p>
+                </div>
+                
+                <div class="story story3">
+                    <img src="https://randomuser.me/api/portraits/thumb/women/77.jpg" alt="">
+                    <!-- <i class='bx bxs-message-square-add'></i> -->
+                    <p>Post Story</p>
+                </div>
+                
+                <div class="story story4">
+                    <img src="https://randomuser.me/api/portraits/thumb/women/78.jpg" alt="">
+                    <!-- <i class='bx bxs-message-square-add'></i> -->
+                    <p>Post Story</p>
+                </div>
+                
+                <div class="story story5">
+                    <img src="https://randomuser.me/api/portraits/thumb/women/79.jpg" alt="">
+                    <!-- <i class='bx bxs-message-square-add'></i> -->
+                    <p>Post Story</p>
+                </div>
+            </div>
+
+            <div class="write-post-container">
+                <div class="user-profile">
+                    <img src="https://pbs.twimg.com/profile_images/3691489229/e0b2f866e2e1449ad4303bc8a57c5168_400x400.jpeg" alt="">
+                    <div>
+                        <p>Ahmet Berkay</p>
+                        <small>Public<i class="fas fa-caret-down"></i></small>
+                    </div>
+                </div>
+                <div class="post-input-container">
+                    <textarea  rows="4" placeholder="What's on your mind, Ahmet?"></textarea>
+                    <div class="add-post-links">
+                        <a href="#"><i class='bx bxs-video' ></i> Live Video</a>
+                        <a href="#"><i class='bx bxs-camera' ></i> Photo/Video</a>
+                        <a href="#"><i class='bx bxs-coffee' ></i> Feeling/Activity</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="https://pbs.twimg.com/profile_images/3691489229/e0b2f866e2e1449ad4303bc8a57c5168_400x400.jpeg" alt="">
+                        <div>
+                            <p>Ahmet Berkay</p>
+                            <span>June 24 2021, 13:40 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i> </a>
+                </div>
+                <p class="post-text">Lorem ipsum dolor sit amet consectetur <span>@adipisicing</span> elit. Odit perspiciatis dolorem earum placeat vero explicabo vitae reprehenderit soluta labore vel. Animi culpa ex doloremque optio eveniet veritatis, doloribus repudiandae dolor nesciunt perspiciatis <a href="#">#reprehenderit</a> modi voluptate ea veniam <a href="#">#sapiente</a> quis quisquam!</p>
+                <img src="https://images.unsplash.com/photo-1632314813226-fc0ac70d8569?w=1476&q=80" alt="" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><i class='bx bxs-like'></i> 120</div>
+                        <div><i class='bx bxs-comment-detail'></i> 45</div>
+                        <div><i class='bx bxs-share' ></i> 20</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="https://pbs.twimg.com/profile_images/3691489229/e0b2f866e2e1449ad4303bc8a57c5168_400x400.jpeg" alt=""><i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+
+            </div>
+            
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="https://pbs.twimg.com/profile_images/3691489229/e0b2f866e2e1449ad4303bc8a57c5168_400x400.jpeg" alt="">
+                        <div>
+                            <p>Ahmet Berkay</p>
+                            <span>June 24 2021, 13:40 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i> </a>
+                </div>
+                <p class="post-text">Lorem ipsum dolor sit amet consectetur <span>@adipisicing</span> elit. Odit perspiciatis dolorem earum placeat vero explicabo vitae reprehenderit soluta labore vel. Animi culpa ex doloremque optio eveniet veritatis, doloribus repudiandae dolor nesciunt perspiciatis <a href="#">#reprehenderit</a> modi voluptate ea veniam <a href="#">#sapiente</a> quis quisquam!</p>
+                <img src="https://images.unsplash.com/photo-1632312045004-494c905db7d2?w=1470&q=80" alt="" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><i class='bx bxs-like liked'></i> 120</div>
+                        <div><i class='bx bxs-comment-detail'></i> 45</div>
+                        <div><i class='bx bxs-share' ></i> 20</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="https://pbs.twimg.com/profile_images/3691489229/e0b2f866e2e1449ad4303bc8a57c5168_400x400.jpeg" alt=""><i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="https://pbs.twimg.com/profile_images/3691489229/e0b2f866e2e1449ad4303bc8a57c5168_400x400.jpeg" alt="">
+                        <div>
+                            <p>Ahmet Berkay</p>
+                            <span>June 24 2021, 13:40 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i> </a>
+                </div>
+                <p class="post-text">Lorem ipsum dolor sit amet consectetur <span>@adipisicing</span> elit. Odit perspiciatis dolorem earum placeat vero explicabo vitae reprehenderit soluta labore vel. Animi culpa ex doloremque optio eveniet veritatis, doloribus repudiandae dolor nesciunt perspiciatis <a href="#">#reprehenderit</a> modi voluptate ea veniam <a href="#">#sapiente</a> quis quisquam!</p>
+                <img src="https://images.unsplash.com/photo-1632312045004-494c905db7d2?w=1470&q=80" alt="" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><i class='bx bxs-like liked'></i> 120</div>
+                        <div><i class='bx bxs-comment-detail'></i> 45</div>
+                        <div><i class='bx bxs-share' ></i> 20</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="https://pbs.twimg.com/profile_images/3691489229/e0b2f866e2e1449ad4303bc8a57c5168_400x400.jpeg" alt=""><i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="https://pbs.twimg.com/profile_images/3691489229/e0b2f866e2e1449ad4303bc8a57c5168_400x400.jpeg" alt="">
+                        <div>
+                            <p>Ahmet Berkay</p>
+                            <span>June 24 2021, 13:40 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i> </a>
+                </div>
+                <p class="post-text">Lorem ipsum dolor sit amet consectetur <span>@adipisicing</span> elit. Odit perspiciatis dolorem earum placeat vero explicabo vitae reprehenderit soluta labore vel. Animi culpa ex doloremque optio eveniet veritatis, doloribus repudiandae dolor nesciunt perspiciatis <a href="#">#reprehenderit</a> modi voluptate ea veniam <a href="#">#sapiente</a> quis quisquam!</p>
+                <img src="https://images.unsplash.com/photo-1556909172-bd5315ff61a0?w=1470&q=80" alt="" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><i class='bx bxs-like liked'></i> 120</div>
+                        <div><i class='bx bxs-comment-detail'></i> 45</div>
+                        <div><i class='bx bxs-share' ></i> 20</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="https://pbs.twimg.com/profile_images/3691489229/e0b2f866e2e1449ad4303bc8a57c5168_400x400.jpeg" alt=""><i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="https://pbs.twimg.com/profile_images/3691489229/e0b2f866e2e1449ad4303bc8a57c5168_400x400.jpeg" alt="">
+                        <div>
+                            <p>Ahmet Berkay</p>
+                            <span>June 24 2021, 13:40 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i> </a>
+                </div>
+                <p class="post-text">Lorem ipsum dolor sit amet consectetur <span>@adipisicing</span> elit. Odit perspiciatis dolorem earum placeat vero explicabo vitae reprehenderit soluta labore vel. Animi culpa ex doloremque optio eveniet veritatis, doloribus repudiandae dolor nesciunt perspiciatis <a href="#">#reprehenderit</a> modi voluptate ea veniam <a href="#">#sapiente</a> quis quisquam!</p>
+                <img src="https://images.unsplash.com/photo-1606787620819-8bdf0c44c293?w=1470&q=80" alt="" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><i class='bx bxs-like'></i> 120</div>
+                        <div><i class='bx bxs-comment-detail'></i> 45</div>
+                        <div><i class='bx bxs-share' ></i> 20</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="https://pbs.twimg.com/profile_images/3691489229/e0b2f866e2e1449ad4303bc8a57c5168_400x400.jpeg" alt=""><i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+
+            </div>
+
+            <button type="button" class="load-more-btn">Load More</button>
+
+        </div>
+        <!-- End of Main Content -->
+
+        <!-- Right Sidebar -->
+        <div class="right-sidebar">
+            <div class="sidebar-title">
+                <h4>Events</h4>
+                <a href="#">See All</a>
+            </div>
+
+            <div class="event">
+                <div class="left-event">
+                    <h3>18</h3>
+                    <span>March</span>
+                </div>
+                <div class="right-event">
+                    <h4>Social Media</h4>
+                    <p><i class="fas fa-map-marker-alt"></i>Willson Tech Park</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+
+            <div class="event">
+                <div class="left-event">
+                    <h3>22</h3>
+                    <span>March</span>
+                </div>
+                <div class="right-event">
+                    <h4>Mobile Marketing</h4>
+                    <p><i class="fas fa-map-marker-alt"></i>Willson Tech Park</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+
+            <div class="sidebar-title">
+                <h4>Advertisement</h4>
+                <a href="#">Close</a>
+            </div>
+
+            <img src="http://www.mypixelfactory.net/photo-forum/nexusmods/mods/commonwealth_advertisment/commonwealth-advertisment-header-3.jpg" alt="" class="sidebar-ads">
+
+            <div class="sidebar-title">
+                <h4>Conversation</h4>
+                <a href="#">Hide Chat</a>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="https://images.unsplash.com/photo-1632130494828-38ee69be3e98?w=687&q=80" alt="">
+                </div>
+                <p>Alison Mina</p>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="https://images.unsplash.com/photo-1629972360214-81ad76d60fe0?w=687&q=80" alt="">
+                </div>
+                <p>Ransford Quaye</p>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="https://images.unsplash.com/photo-1615813966782-294bf40e39a5?w=703&q=80" alt="">
+                </div>
+                <p>Nancy Bentley</p>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="https://images.unsplash.com/photo-1607601016772-33a33a6abc39?w=758&q=80" alt="">
+                </div>
+                <p>Kat J</p>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="https://randomuser.me/api/portraits/women/30.jpg" alt="">
+                </div>
+                <p>Johanne Madsen</p>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="https://randomuser.me/api/portraits/women/92.jpg" alt="">
+                </div>
+                <p>Flora Masson</p>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="https://randomuser.me/api/portraits/women/14.jpg" alt="">
+                </div>
+                <p>Lenícia Ferreira</p>
+            </div>
+
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="https://randomuser.me/api/portraits/women/91.jpg" alt="">
+                </div>
+                <p>Maureen Coleman</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Copyright 2021 - ahmetberkaycalisti</p>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
